@@ -7,7 +7,7 @@ import argparse
 ROOT = Path(__file__).resolve().parents[2]
 
 # Trained YOLO model
-MODEL_PATH = ROOT / "runs" / "detect" / "train" / "weights" / "best.pt"
+MODEL_PATH = ROOT / "ml" / "models" / "best.pt"
 
 
 def main():
