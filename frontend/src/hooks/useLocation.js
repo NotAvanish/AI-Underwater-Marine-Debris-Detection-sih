@@ -7,6 +7,7 @@ export function useLocation() {
   const [state, setState] = useState('idle')
   const [message, setMessage] = useState('Location services have not been started.')
   const start = useCallback(() => {
+    if (watchId.current !== null && navigator.geolocation) navigator.geolocation.clearWatch(watchId.current)
     if (!navigator.geolocation) { setState('unavailable'); setMessage('This browser does not provide location services.'); return }
     setState('connecting'); setMessage('Requesting location permission…')
     watchId.current = navigator.geolocation.watchPosition(
@@ -20,7 +21,8 @@ export function useLocation() {
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 5000 }
     )
   }, [])
+  const stop = useCallback(() => { if (watchId.current !== null && navigator.geolocation) navigator.geolocation.clearWatch(watchId.current); watchId.current = null; setState('idle'); setMessage('Location services stopped.') }, [])
   const clearTrack = useCallback(() => setTrack([]), [])
   useEffect(() => () => { if (watchId.current !== null && navigator.geolocation) navigator.geolocation.clearWatch(watchId.current) }, [])
-  return { location, track, state, message, start, clearTrack }
+  return { location, track, state, message, start, stop, clearTrack }
 }
