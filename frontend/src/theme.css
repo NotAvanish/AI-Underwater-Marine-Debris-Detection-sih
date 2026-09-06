@@ -1,0 +1,12 @@
+:root[data-theme="light"]{color-scheme:light;filter:none}
+:root[data-theme="light"] body{background:#edf4f5;color:#17252b}
+:root[data-theme="light"] .sidebar,:root[data-theme="light"] .topbar{background:#f8fbfb;border-color:#c7d8dc}
+:root[data-theme="light"] .summary,:root[data-theme="light"] .viewer-panel,:root[data-theme="light"] .detection-panel,:root[data-theme="light"] .map-panel,:root[data-theme="light"] .empty-card,:root[data-theme="light"] .table-card,:root[data-theme="light"] .chart-card,:root[data-theme="light"] .metric-card,:root[data-theme="light"] .report-list{background:#fff;border-color:#c7d8dc}
+:root[data-theme="light"] .summary div,:root[data-theme="light"] .viewer-panel header,:root[data-theme="light"] .map-panel header,:root[data-theme="light"] .panel-title,:root[data-theme="light"] .filter-row,:root[data-theme="light"] .detection-row,:root[data-theme="light"] .map-panel footer{border-color:#d7e3e5}
+:root[data-theme="light"] .summary strong,:root[data-theme="light"] .viewer-panel header b,:root[data-theme="light"] .map-panel header b,:root[data-theme="light"] .content-page h1,:root[data-theme="light"] .report-list strong{color:#173038}
+:root[data-theme="light"] nav a{color:#52717a}:root[data-theme="light"] nav a:hover,:root[data-theme="light"] nav a.active{color:#16353d;background:#e4f1f3}
+:root[data-theme="light"] .actionbar{border-color:#c7d8dc}:root[data-theme="light"] .actionbar .eyebrow,:root[data-theme="light"] .muted,:root[data-theme="light"] .map-panel footer{color:#58747c}
+:root[data-theme="light"] .theme-toggle{background:#173038;color:#fff;border-color:#173038}
+.theme-toggle{font-size:8px;padding:4px 6px;margin-left:8px;background:#14242a;border-color:#39525b;color:#b9d6da;white-space:nowrap}
+.inline-location{display:flex;align-items:center;gap:5px;margin-right:7px}.inline-location span{font:9px 'IBM Plex Mono';color:#8caab0;white-space:nowrap}.inline-location input{width:78px;padding:8px 7px;border:1px solid #39525b;background:#0d171c;color:#dceff1;font:10px 'IBM Plex Mono'}.inline-location button{padding:8px 9px;font-size:9px}.inline-location input:focus{outline:1px solid #32b8cd}
+:root[data-theme="light"] .inline-location input{background:#fff;color:#173038;border-color:#a8c4c9}
